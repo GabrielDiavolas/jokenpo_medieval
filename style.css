@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Roboto&display=swap');
+
+
+/*O seletor * refere-se a todos elementos, ou seja, ele faz uma formatação geral*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebucjet MS", Helvetica, sans-serif;
+    background-color: #e6e6e6;
+}
+
+/*** Início Layout area do placar ***/
+
+#area_placar {
+    background-color: #f7b600;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+#cabecalho {
+    padding-bottom: 15px;
+}
+
+.elementos_placar {
+    border: 1px solid;
+}
+
+#placar_tabela {
+    margin: auto;
+    /*centraliza o elemento*/
+    border: 1px solid;
+}
+
+#cabecalho_placar {
+    font-size: larger;
+    text-align: center;
+    padding: 5px;
+}
+
+/*** Final layout placar ***/
+
+/*** Início área do Jogo ***/
+
+#area_jogo {
+    display: flex;
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+}
+
+.opcoes {
+    background-color: #f7b600;
+    color: white;
+    padding: 10px;
+    border-radius: 2em;
+    box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.466);
+}
+
+#opcoes_maquina {
+    margin-left: auto;
+    height: auto;
+    width: auto;
+}
+
+#opcoes_jogador {
+    height: auto;
+    width: auto;
+}
+
+#quem_ganhou {
+    font-family: 'Benne', serif;
+    font-size: larger;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1em;
+    border-radius: 3em;
+    background-color: rgba(206, 206, 206, 0.349);
+}
+
+/*** Final área do Jogo ***/
+
+/*** Início área de Resultados ***/
+
+#area_resultado {
+    /*position: relative;*/
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+    border-bottom-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+    background-color: rgba(206, 206, 206, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Forma de centralizar um span dentro de uma div*/
+
+#area_escolhas {
+    /* position: absolute;*/
+    position: relative;
+    width: 400px;
+    height: 90px;
+    background-color: #f7b600;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+#versus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.escolha_geral {
+    margin: auto;
+}
+
+/*Atribui ao elemento a animação de piscar*/
+
+#img_escolha_maquina {
+    animation-name: flash;
+    animation-duration: 1s;
+    border-radius: 1.5em;
+}
+
+/*Cria o efeito de animação de algo piscando*/
+
+@keyframes flash {
+    0% {
+        background: #f7b600;
+    }
+    50% {
+        background: #e2a90a;
+    }
+    100% {
+        background: #f7b600;
+    }
+}
+
+/*** Final área de Resultados ***/

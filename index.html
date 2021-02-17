@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div id='area_placar'>
+        <h1 id="cabecalho">Espada, Escudo ou Cajadada</h1>
+
+        <table id="placar_tabela">
+            <tr class="elementos_placar">
+                <th colspan='2' id="cabecalho_placar" class="elementos_placar">Placar de resultados</th>
+            </tr>
+            <tr class="elementos_placar">
+                <th id="jogador" class="elementos_placar">Jogador</th>
+                <th class="elementos_placar">Máquina</th>
+            </tr>
+            <tr class="elementos_placar">
+                <td id="pontos_jogador" class="elementos_placar">0</td>
+                <td id="pontos_maquina" class="elementos_placar">0</td>
+            </tr>
+        </table>
+    </div>
+    <div id='area_jogo'>
+        <span id="opcoes_jogador" class="opcoes">
+            <img src="imagens/Espada.png" alt="Espada" id="img_espada_player" class="opcoes_ambos">
+            <img src="imagens/Escudo.png" alt="Escudo" id="img_escudo_player" class="opcoes_ambos">
+            <img src="imagens/Mago.png" alt="Mago" id="img_mago_player" class="opcoes_ambos">
+        </span>
+        <span id="quem_ganhou">Esperando o embate ...</span>
+        <span id="opcoes_maquina" class="opcoes">
+            <img src="imagens/Espada.png" alt="Espada" id="img_espada_maquina" class="opcoes_ambos">
+            <img src="imagens/Escudo.png" alt="Escudo" id="img_escudo_maquina" class="opcoes_ambos">
+            <img src="imagens/Mago.png" alt="Mago" id="img_mago_maquina" class="opcoes_ambos">
+        </span>
+    </div>
+    <div id='area_resultado'>
+        <span id="area_escolhas">
+            <span id="escolha_player" class="escolha_geral">
+            </span>
+            <span>
+                <img src="imagens/vs_1.png" alt="versus" id="versus">
+            </span>
+            <span id="escolha_maquina" class="escolha_geral">
+            </span>
+        </span>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
