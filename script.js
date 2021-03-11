@@ -15,8 +15,10 @@ var quem_ganhou = document.getElementById("quem_ganhou")
 var pontos_jogador = document.getElementById("pontos_jogador")
 var pontos_maquina = document.getElementById("pontos_maquina")
 var nome_jogador = document.getElementById("jogador")
+var lugar_versus = document.getElementById("lugar_versus")
 
 //Coloca nome no jogador
+
 var jogador = window.prompt('Qual é o seu nome, nobre jogador ?')
     nome_jogador.innerText = `${jogador}`
 
@@ -132,8 +134,14 @@ function aleatorizarMaquina(min, max) {
 
 }
 
+//Função com a lógica do game
 function logicaGame() {
     a_escolha_da_maquina = aleatorizarMaquina(3, 5)
+
+    var versus_img = document.createElement('img')
+    versus_img.src = "imagens/vs_1.png"
+    versus_img.setAttribute("id", "versus")
+    lugar_versus.appendChild(versus_img) 
 
     //Coloca as imagens na escolha da maquina
     switch (a_escolha_da_maquina) {
@@ -164,18 +172,18 @@ function logicaGame() {
         a_escolha_da_maquina == 4 && a_escolha_do_player == 1 ||
         a_escolha_da_maquina == 5 && a_escolha_do_player == 2
     ) {
-        quem_ganhou.innerText = `Houve um impate, ninguém pontuou :v`
+        quem_ganhou.innerText = `Houve um impate, ninguém pontuou \u{1F605}`
     } else if (a_escolha_da_maquina == 5 && a_escolha_do_player == 0 ||
         a_escolha_da_maquina == 4 && a_escolha_do_player == 2 ||
         a_escolha_da_maquina == 3 && a_escolha_do_player == 1
     ) {
-        quem_ganhou.innerText = `Vitória de ${jogador} ;)`
+        quem_ganhou.innerText = `Vitória de ${jogador} \u{1F609}`
         cont_pontos_player = cont_pontos_player + 1
     } else if (a_escolha_da_maquina == 5 && a_escolha_do_player == 1 ||
         a_escolha_da_maquina == 4 && a_escolha_do_player == 0 ||
         a_escolha_da_maquina == 3 && a_escolha_do_player == 2
     ) {
-        quem_ganhou.innerText = `Vitória da Máquina :3`
+        quem_ganhou.innerText = `Vitória da Máquina \u{1F92D}`
         cont_pontos_maquina = cont_pontos_maquina + 1
     }
 
