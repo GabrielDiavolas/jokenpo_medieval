@@ -172,7 +172,7 @@ function logicaGame() {
         a_escolha_da_maquina == 4 && a_escolha_do_player == 1 ||
         a_escolha_da_maquina == 5 && a_escolha_do_player == 2
     ) {
-        quem_ganhou.innerText = `Houve um impate, ninguém pontuou \u{1F605}`
+        quem_ganhou.innerText = `Houve um empate, ninguém pontuou \u{1F605}`
     } else if (a_escolha_da_maquina == 5 && a_escolha_do_player == 0 ||
         a_escolha_da_maquina == 4 && a_escolha_do_player == 2 ||
         a_escolha_da_maquina == 3 && a_escolha_do_player == 1
