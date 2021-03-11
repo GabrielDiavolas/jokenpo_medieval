@@ -123,6 +123,8 @@ body {
 
 #versus {
     position: absolute;
+    padding: auto;
+    width: 4em;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
