@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Benne&family=Roboto&display=swap');
 
-
-/*O seletor * refere-se a todos elementos, ou seja, ele faz uma formatação geral*/
 * {
     margin: 0;
     padding: 0;
@@ -16,30 +14,35 @@ body {
 /*** Início Layout area do placar ***/
 
 #area_placar {
+    display: flex;
     background-color: #f7b600;
-    padding: 15px;
+    padding: 1em;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
 #cabecalho {
-    padding-bottom: 15px;
+    display: flex;
+    position: absolute;
+    margin-bottom: 2.5em;
 }
 
 .elementos_placar {
-    border: 1px solid;
+    border: 0.1em solid;
 }
 
 #placar_tabela {
-    margin: auto;
+    margin-top: 4em;
     /*centraliza o elemento*/
-    border: 1px solid;
+    border: 0.1em solid;
 }
 
 #cabecalho_placar {
     font-size: larger;
     text-align: center;
-    padding: 5px;
+    padding: 0.1em;
 }
 
 /*** Final layout placar ***/
@@ -48,13 +51,13 @@ body {
 
 #area_jogo {
     display: flex;
-    width: 920px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0.1em;
     background-color: white;
 }
 
 .opcoes {
+    display: flex;
     background-color: #f7b600;
     color: white;
     padding: 10px;
@@ -63,19 +66,22 @@ body {
 }
 
 #opcoes_maquina {
+    display: grid;
     margin-left: auto;
     height: auto;
     width: auto;
 }
 
 #opcoes_jogador {
+    display: grid;
     height: auto;
     width: auto;
 }
 
 #quem_ganhou {
+    display: flex;
     font-family: 'Benne', serif;
-    font-size: larger;
+    font-size: 0.9rem;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -90,13 +96,12 @@ body {
 
 #area_resultado {
     /*position: relative;*/
-    width: 920px;
+    display: flex;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0.5em;
     border-bottom-left-radius: 10em;
     border-bottom-right-radius: 10em;
     background-color: rgba(206, 206, 206, 0.349);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -105,12 +110,10 @@ body {
 
 #area_escolhas {
     /* position: absolute;*/
+    display: flex;
     position: relative;
-    width: 400px;
-    height: 90px;
     background-color: #f7b600;
     border-radius: 10em;
-    display: flex;
     justify-content: center;
     align-items: center;
     /*top: 50%;*/
